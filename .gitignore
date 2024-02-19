@@ -1,4 +1,6 @@
 dataSource.properties
+pom.properties
+MANIFEST.MF
 
 # Eclipse
 .classpath
