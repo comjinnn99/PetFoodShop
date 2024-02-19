@@ -1,7 +1,5 @@
 package co.teamtwo.prj;
 
-import java.sql.Connection;
-
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,13 +15,8 @@ public class HomeController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Model model) {
-		try {
-			Connection conn = dataSource.getConnection();
-			System.out.println("db connected");
-		} catch (Exception e) {
-			System.out.println("db connect failed");
-		}
-
+		System.out.println(dataSource.toString());
+		
 		return "main/home";
 	}
 
