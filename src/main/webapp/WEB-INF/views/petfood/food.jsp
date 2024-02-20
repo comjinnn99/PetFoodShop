@@ -430,7 +430,7 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="#">듀먼 닭가슴살&연어 빛나는 피모 100g</a></h6>
+                                    <h6><a href="#">듀먼 닭가슴살&연어 빛나는 피모 100g..</a></h6>
                                     <h5>1,900원</h5>
                                 </div>
                             </div>
