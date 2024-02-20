@@ -5,18 +5,56 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+ <style>
+      
+        #recommendation {
+            margin-bottom: 0;
+            font-size: 30px;
+        }
+        .latest-product__slider.owl-carousel .owl-nav button {
+	        height: 30px;
+	        width: 30px;	
+	        font-size: 14px;
+	        color: #636363;
+	        margin-right: 10px;
+	        line-height: 30px;
+	        text-align: center;
+	        position: relative;
+	        top: 15px;
+            left: 10px;
+}
+    </style>
 </head>
 <body>
+
+<!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="resources/img/breadcrumb.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>간식</h2>
+                        <div class="breadcrumb__option">
+                            <a href="./index.html">Home</a>
+                            <span>간식</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
 	<section class="product spad">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-5">
-					<div id="location">HOME > 간식</div>
+					
 					<div class="sidebar">
 						<div class="sidebar__item">
 							<h4>간식</h4>
 							<ul>
-								<li><a href="snackdetail">토핑/육포</a></li>
+								<li><a href="">토핑/육포</a></li>
 								<li><a href="#">보양식</a></li>
 								<li><a href="#">펫밀크/무스</a></li>
 								<li><a href="#">트릿</a></li>
@@ -95,160 +133,7 @@
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-7">
-					<div class="product__discount">
-						<div class="section-title product__discount__title">
-							<h2>Sale Off</h2>
-						</div>
-						<div class="row">
-							<div class="product__discount__slider owl-carousel">
-
-
-								<!-- sale off 시작 -->
-
-								<!-- 이부분을 foreach돌리기 -->
-								<div class="col-lg-4">
-									<div class="product__discount__item">
-										<div class="product__discount__item__pic set-bg"
-											data-setbg="resources/img/product/discount/pd-1.jpg">
-											<div class="product__discount__percent">-20%</div>
-											<ul class="product__item__pic__hover">
-												<li><a href="#"><i class="fa fa-heart"></i></a></li>
-
-												<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											</ul>
-										</div>
-										<div class="product__discount__item__text">
-											<span></span>
-											<h5>
-												<a href="#">Raisin’n’nuts</a>
-											</h5>
-											<div class="product__item__price">
-												$30.00 <span>$36.00</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!---->
-
-
-
-
-								<div class="col-lg-4">
-									<div class="product__discount__item">
-										<div class="product__discount__item__pic set-bg"
-											data-setbg="resources/img/product/discount/pd-2.jpg">
-											<div class="product__discount__percent">-20%</div>
-											<ul class="product__item__pic__hover">
-												<li><a href="#"><i class="fa fa-heart"></i></a></li>
-												<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											</ul>
-										</div>
-										<div class="product__discount__item__text">
-											<span></span>
-											<h5>
-												<a href="#">Vegetables’package</a>
-											</h5>
-											<div class="product__item__price">
-												$30.00 <span>$36.00</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4">
-									<div class="product__discount__item">
-										<div class="product__discount__item__pic set-bg"
-											data-setbg="resources/img/product/discount/pd-3.jpg">
-											<div class="product__discount__percent">-20%</div>
-											<ul class="product__item__pic__hover">
-												<li><a href="#"><i class="fa fa-heart"></i></a></li>
-												<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											</ul>
-										</div>
-										<div class="product__discount__item__text">
-											<span></span>
-											<h5>
-												<a href="#">Mixed Fruitss</a>
-											</h5>
-											<div class="product__item__price">
-												$30.00 <span>$36.00</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4">
-									<div class="product__discount__item">
-										<div class="product__discount__item__pic set-bg"
-											data-setbg="resources/img/product/discount/pd-4.jpg">
-											<div class="product__discount__percent">-20%</div>
-											<ul class="product__item__pic__hover">
-												<li><a href="#"><i class="fa fa-heart"></i></a></li>
-												<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											</ul>
-										</div>
-										<div class="product__discount__item__text">
-											<span></span>
-											<h5>
-												<a href="#">Raisin’n’nuts</a>
-											</h5>
-											<div class="product__item__price">
-												$30.00 <span>$36.00</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4">
-									<div class="product__discount__item">
-										<div class="product__discount__item__pic set-bg"
-											data-setbg="resources/img/product/discount/pd-5.jpg">
-											<div class="product__discount__percent">-20%</div>
-											<ul class="product__item__pic__hover">
-												<li><a href="#"><i class="fa fa-heart"></i></a></li>
-												<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											</ul>
-										</div>
-										<div class="product__discount__item__text">
-											<span></span>
-											<h5>
-												<a href="#">Raisin’n’nuts</a>
-											</h5>
-											<div class="product__item__price">
-												$30.00 <span>$36.00</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4">
-									<div class="product__discount__item">
-										<div class="product__discount__item__pic set-bg"
-											data-setbg="resources/img/product/discount/pd-6.jpg">
-											<div class="product__discount__percent">-20%</div>
-											<ul class="product__item__pic__hover">
-												<li><a href="#"><i class="fa fa-heart"></i></a></li>
-												<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											</ul>
-										</div>
-										<div class="product__discount__item__text">
-											<span></span>
-											<h5>
-												<a href="#">Raisin’n’nuts</a>
-											</h5>
-											<div class="product__item__price">
-												$30.00 <span>$36.00</span>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- sale off 끝 -->
-
-
-
-
-
-
-							</div>
-						</div>
-					</div>
+					
 					<div class="filter__item">
 						<div class="row">
 							<div class="col-lg-4 col-md-5">
