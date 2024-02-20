@@ -3,6 +3,7 @@ pom.properties
 MANIFEST.MF
 META-INF/*
 .springBeans
+README.md
 
 # Eclipse
 .classpath
