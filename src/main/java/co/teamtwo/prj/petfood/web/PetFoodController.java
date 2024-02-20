@@ -17,9 +17,9 @@ public class PetFoodController {
 		return "petfood/food";
 	}
 	
-	@RequestMapping(value = "/product", method = RequestMethod.GET)
-	public String product() {
-		return "petfood/product";
+	@RequestMapping(value = "/supply", method = RequestMethod.GET)
+	public String supply() {
+		return "petfood/supply";
 	}
 	
 	@RequestMapping(value = "/loginform", method = RequestMethod.GET)

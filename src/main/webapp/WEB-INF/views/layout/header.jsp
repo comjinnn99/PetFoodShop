@@ -50,7 +50,7 @@
             <li class="active"><a href="home">Home</a></li>
             <li><a href="food">강아지 화식</a></li>
             <li><a href="snack">간식</a></li>
-            <li><a href="product">펫용품</a></li>
+            <li><a href="supply">펫용품</a></li>
           </ul>
         </nav>
       </div>
@@ -108,7 +108,7 @@
             <li><a href="#">선물세트</a></li>
             <div class="dropdown-divider"></div>
             <div class="dropdown-divider"></div>
-            <li><a href="product">펫용품</a></li>
+            <li><a href="supply">펫용품</a></li>
             <div class="dropdown-divider"></div>
             <li><a href="#">배변패드</a></li>
             <li><a href="#">목욕용품</a></li>
