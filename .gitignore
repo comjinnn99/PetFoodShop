@@ -1,6 +1,8 @@
 dataSource.properties
 pom.properties
 MANIFEST.MF
+META-INF/*
+.springBeans
 
 # Eclipse
 .classpath
@@ -16,5 +18,5 @@ MANIFEST.MF
 .DS_Store
 
 # Maven
-log/
-target/
+log/*
+target/*
