@@ -26,7 +26,7 @@
               </a>
             </div>
             <div class="header__top__right__auth">
-              <a href="#">
+              <a href="loginform">
                 <i class="fa fa-user"></i> Login
               </a>
             </div>
@@ -79,18 +79,55 @@
   </div>
 </header>
 <!-- Hero Section Begin -->
-<section class="hero">
+<section class="hero hero-normal">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <div class="hero__search__form" style="width: 100%;">
-          <form action="#">
-            <input type="text" placeholder="What do yo u need?">
-            <button type="submit" class="site-btn">SEARCH</button>
-          </form>
+      <div class="col-lg-3">
+        <div class="hero__categories">
+          <div class="hero__categories__all">
+            <i class="fa fa-bars"></i>
+            <span>All category</span>
+          </div>
+          <ul>
+            <li><a href="food">자연화식</a></li>
+            <div class="dropdown-divider"></div>
+            <li><a href="#">닭가슴살</a></li>
+            <li><a href="#">소고기</a></li>
+            <li><a href="#">연어</a></li>
+            <li><a href="#">오리</a></li>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-divider"></div>
+            <li><a href="snack">간식</a></li>
+            <div class="dropdown-divider"></div>
+            <li><a href="#">토핑/육포</a></li>
+            <li><a href="#">보양식</a></li>
+            <li><a href="#">펫밀크/무스</a></li>
+            <li><a href="#">트릿</a></li>
+            <li><a href="#">껌</a></li>
+            <li><a href="#">영양제</a></li>
+            <li><a href="#">선물세트</a></li>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-divider"></div>
+            <li><a href="product">펫용품</a></li>
+            <div class="dropdown-divider"></div>
+            <li><a href="#">배변패드</a></li>
+            <li><a href="#">목욕용품</a></li>
+            <li><a href="#">외출용품</a></li>
+            <li><a href="#">생활용품</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="hero__search">
+          <div class="hero__search__form" style="width: 100%;">
+            <form action="#">
+              <input type="text" id="search" name="search" placeholder="What do yo u need?">
+              <button type="submit" class="site-btn">SEARCH</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- Header Section End -->
+<!-- Hero Section End -->

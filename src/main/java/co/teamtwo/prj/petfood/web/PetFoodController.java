@@ -21,4 +21,9 @@ public class PetFoodController {
 	public String product() {
 		return "petfood/product";
 	}
+	
+	@RequestMapping(value = "/loginform", method = RequestMethod.GET)
+	public String loginform() {
+		return "member/loginform";
+	}
 }
