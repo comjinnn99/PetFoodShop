@@ -39,7 +39,7 @@
     <div class="row">
       <div class="col-lg-2">
         <div class="header__logo">
-          <a href="#">
+          <a href="home">
             <img src="resources/img/logo.png" alt="">
           </a>
         </div>
@@ -47,10 +47,10 @@
       <div class="col-lg-7">
         <nav class="header__menu">
           <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">강아지 화식</a></li>
-            <li><a href="#">간식</a></li>
-            <li><a href="#">펫용품</a></li>
+            <li class="active"><a href="home">Home</a></li>
+            <li><a href="food">강아지 화식</a></li>
+            <li><a href="snack">간식</a></li>
+            <li><a href="product">펫용품</a></li>
           </ul>
         </nav>
       </div>

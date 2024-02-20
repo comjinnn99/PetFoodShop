@@ -13,10 +13,10 @@ public class HomeController {
 	@Autowired
 	private DataSource dataSource;
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
 	public String home(Model model) {
 		System.out.println(dataSource.toString());
-		
+
 		return "main/home";
 	}
 
