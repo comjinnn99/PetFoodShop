@@ -13,7 +13,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <div class="breadcrumb__text">
-            <h2>강아지화식 shop</h2>
+            <h2>강아지화식 오리</h2>
             <div class="breadcrumb__option">
               <a href="./index.html">Home</a>
               <span>Shop</span>
