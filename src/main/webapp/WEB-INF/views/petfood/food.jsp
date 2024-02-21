@@ -15,7 +15,7 @@
           <div class="breadcrumb__text">
             <h2>강아지화식 shop</h2>
             <div class="breadcrumb__option">
-              <a href="./index.html">Home</a>
+              <a href="home">Home</a>
               <span>Shop</span>
             </div>
           </div>

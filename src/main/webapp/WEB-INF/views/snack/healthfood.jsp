@@ -33,10 +33,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>간식</h2>
+                        <h2>보양식</h2>
                         <div class="breadcrumb__option">
-                            <a href="home">Home</a>
-                            <span>간식</span>
+                            <a href="snack">간식</a>
+                            <span>보양식</span>
                         </div>
                     </div>
                 </div>

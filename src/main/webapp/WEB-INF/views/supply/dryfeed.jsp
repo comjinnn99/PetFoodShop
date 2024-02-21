@@ -47,10 +47,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>펫용품</h2>
+                        <h2>건사료</h2>
                         <div class="breadcrumb__option">
-                            <a href="home">Home</a>
-                            <span>펫용품</span>
+                            <a href="supply">펫용품</a>
+                            <span>건사료</span>
                         </div>
                     </div>
                 </div>
