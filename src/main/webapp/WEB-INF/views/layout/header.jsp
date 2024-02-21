@@ -21,12 +21,12 @@
               <a href="https://www.instagram.com/dhuman_happy/">
                 <i class="fa fa-instagram"></i>
               </a>
-              <a href="#">
+              <a href="https://www.dhuman.co.kr/">
                 <i class="fa fa-linkedin"></i>
               </a>
             </div>
             <div class="header__top__right__auth">
-              <a href="loginform">
+              <a href="signinform">
                 <i class="fa fa-user"></i> Login
               </a>
             </div>
@@ -61,7 +61,7 @@
                 <i class="fa fa-heart"></i>
                 <span>1</span>
               </a></li>
-            <li><a href="shoppingcart">
+            <li><a href="cartlist">
                 <i class="fa fa-shopping-bag"></i>
                 <span>3</span>
               </a></li>
@@ -91,29 +91,30 @@
           <ul>
             <li><a href="food">자연화식</a></li>
             <div class="dropdown-divider"></div>
-            <li><a href="#">닭가슴살</a></li>
-            <li><a href="#">소고기</a></li>
-            <li><a href="#">연어</a></li>
-            <li><a href="#">오리</a></li>
+            <li><a href="chicken">닭가슴살</a></li>
+            <li><a href="beef">소고기</a></li>
+            <li><a href="salmon">연어</a></li>
+            <li><a href="duck">오리</a></li>
             <div class="dropdown-divider"></div>
             <div class="dropdown-divider"></div>
             <li><a href="snack">간식</a></li>
             <div class="dropdown-divider"></div>
-            <li><a href="#">토핑/육포</a></li>
-            <li><a href="#">보양식</a></li>
-            <li><a href="#">펫밀크/무스</a></li>
-            <li><a href="#">트릿</a></li>
-            <li><a href="#">껌</a></li>
-            <li><a href="#">영양제</a></li>
-            <li><a href="#">선물세트</a></li>
+            <li><a href="topping">토핑/육포</a></li>
+            <li><a href="healthfood">보양식</a></li>
+            <li><a href="petmilk">펫밀크/무스</a></li>
+            <li><a href="treat">트릿</a></li>
+            <li><a href="gum">껌</a></li>
+            <li><a href="supplement">영양제</a></li>
+            <li><a href="giftset">선물세트</a></li>
             <div class="dropdown-divider"></div>
             <div class="dropdown-divider"></div>
             <li><a href="supply">펫용품</a></li>
             <div class="dropdown-divider"></div>
-            <li><a href="#">배변패드</a></li>
-            <li><a href="#">목욕용품</a></li>
-            <li><a href="#">외출용품</a></li>
-            <li><a href="#">생활용품</a></li>
+            <li><a href="pottypad">배변패드</a></li>
+            <li><a href="bathsupply">목욕용품</a></li>
+            <li><a href="outingsupply">외출용품</a></li>
+            <li><a href="dailysupply">생활용품</a></li>
+            <li><a href="dryfeed">건사료</a></li>
           </ul>
         </div>
       </div>

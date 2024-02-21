@@ -6,7 +6,7 @@
       <div class="col-lg-8 col-md-6 col-sm-6">
         <div class="footer__about">
           <div class="footer__about__logo">
-            <a href="#">
+            <a href="home">
               <img src="resources/img/logo.png" alt="">
             </a>
           </div>
@@ -32,7 +32,7 @@
             <a href="https://www.instagram.com/dhuman_happy/">
               <i class="fa fa-instagram"></i>
             </a>
-            <a href="#">
+            <a href="https://www.dhuman.co.kr/">
               <i class="fa fa-linkedin"></i>
             </a>
           </div>
