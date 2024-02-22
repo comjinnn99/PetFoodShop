@@ -202,23 +202,41 @@
     /*-------------------
 		Quantity change
 	--------------------- */
+$(document).ready(function () {
+	// pro-qty 클래스를 가진 요소를 찾아서 그 안에 +, - 버튼을 추가함
     var proQty = $('.pro-qty');
     proQty.prepend('<span class="dec qtybtn">-</span>');
     proQty.append('<span class="inc qtybtn">+</span>');
+    
+	// proQty객체 내부에서 .qtybtn 클래스를 가진 요소가 클릭 되었을 때의 이벤트 핸들러(어떤 이벤트가 발생했을 때 실행되는 함수)
     proQty.on('click', '.qtybtn', function () {
-        var $button = $(this);
-        var oldValue = $button.parent().find('input').val();
+    
+        var $button = $(this); // 클릭된 버튼객체, $는 jQuery 라이브러리에서 사용되는 식별자
+        var $quantityInput = $button.parent().find('input'); // 해당 버튼의 부모 내부에서 input을 찾음
+        var oldValue = parseFloat($quantityInput.val()); // 현재 수량 가져오기
+        var productId = $quantityInput.attr('id').replace('number', ''); // productId 추출
+
         if ($button.hasClass('inc')) {
-            var newVal = parseFloat(oldValue) + 1;
-        } else {
-            // Don't allow decrementing below zero
+            var newVal = oldValue + 1;
+        } else { // 0 미만으로 안되도록 설정
             if (oldValue > 0) {
-                var newVal = parseFloat(oldValue) - 1;
+                var newVal = oldValue - 1;
             } else {
                 newVal = 0;
             }
         }
-        $button.parent().find('input').val(newVal);
+
+        // 새로운 값을 수량 input에 설정
+        $quantityInput.val(newVal); 
+
+        // 상품 가격을 가져와서 현재 수량과 곱한 후, 해당 상품의 총 가격 업데이트
+        var price = parseFloat($('#price' + productId).data('price'));
+        var totalPrice = newVal * price;
+        $('#totalprice' + productId).text(totalPrice);
     });
+    
+ 
+});
+
 
 })(jQuery);

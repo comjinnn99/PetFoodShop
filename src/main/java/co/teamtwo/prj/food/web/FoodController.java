@@ -28,4 +28,5 @@ public class FoodController {
 	public String duck() {
 		return "foodcategory/duck";
 	}
+	
 }
