@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class SupplyController {
 	
+	@RequestMapping("/supply")
+	public String supply(Model model) {
+		return "supply/supply";
+	}
+	
 	@RequestMapping("/pottypad")
 	public String pottypad(Model model) {
 		return "supply/pottypad";

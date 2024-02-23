@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class SnackController {
 	
+	@RequestMapping("/snack")
+	public String snack(Model model) {
+		return "snack/snack";
+	}
+	
 	@RequestMapping("/topping")
 	public String topping(Model model) {
 		return "snack/topping";
