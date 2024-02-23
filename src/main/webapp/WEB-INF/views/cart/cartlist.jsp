@@ -41,7 +41,7 @@
                                     <th></th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="cartTable">
                                 <tr>
                                     <td class="shoping__cart__item">
                                         <img src="resources/img/cart/cart-1.jpg" alt="">
@@ -136,7 +136,7 @@
                     <div class="shoping__checkout">
                         <h5>Cart Total</h5>
                         <ul>
-                            <li>Total <span id="finalTotalPrice" type="number">300</span></li>
+                            <li>Total <span id="finalTotalPrice" type="number">0</span></li>
                         </ul>
                         <a href="checkoutform" class="primary-btn">PROCEED TO CHECKOUT</a>
                     </div>

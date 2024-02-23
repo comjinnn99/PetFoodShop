@@ -12,10 +12,7 @@ public class PetFoodController {
 		return "petfood/snack";
 	}
 
-	@RequestMapping(value = "/food", method = RequestMethod.GET)
-	public String food() {
-		return "petfood/food";
-	}
+
 	
 	@RequestMapping(value = "/supply", method = RequestMethod.GET)
 	public String supply() {
