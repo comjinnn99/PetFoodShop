@@ -6,20 +6,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class PetFoodController {
-
-	@RequestMapping(value = "/snack", method = RequestMethod.GET)
-	public String snack() {
-		return "petfood/snack";
-	}
-
+	
 	@RequestMapping(value = "/food", method = RequestMethod.GET)
 	public String food() {
 		return "petfood/food";
-	}
-	
-	@RequestMapping(value = "/supply", method = RequestMethod.GET)
-	public String supply() {
-		return "petfood/supply";
 	}
 	
 	@RequestMapping(value = "/loginform", method = RequestMethod.GET)
