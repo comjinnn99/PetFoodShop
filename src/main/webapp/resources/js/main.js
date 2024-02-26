@@ -202,7 +202,7 @@
     /*-------------------
 		Quantity change
 	--------------------- */
-$(document).ready(function () {
+$(document).ready(function () { // 문서가 완전히 로드된 후에 실행되는 함수를 정의
 	// pro-qty 클래스를 가진 요소를 찾아서 그 안에 +, - 버튼을 추가함
     var proQty = $('.pro-qty');
     proQty.prepend('<span class="dec qtybtn">-</span>');
@@ -212,7 +212,7 @@ $(document).ready(function () {
     proQty.on('click', '.qtybtn', function () {
     
         var $button = $(this); // 클릭된 버튼객체, $는 jQuery 라이브러리에서 사용되는 식별자
-        var $quantityInput = $button.parent().find('input'); // 해당 버튼의 부모 내부에서 input을 찾음
+        var $quantityInput = $button.parent().find('input'); // 해당 버튼의 부모 내부에서 input을 찾음(상품 갯수) id="number1", id="number2" ...
         var oldValue = parseFloat($quantityInput.val()); // 현재 수량 가져오기
         var productId = $quantityInput.attr('id').replace('number', ''); // productId 추출
 
@@ -230,13 +230,30 @@ $(document).ready(function () {
         $quantityInput.val(newVal); 
 
         // 상품 가격을 가져와서 현재 수량과 곱한 후, 해당 상품의 총 가격 업데이트
-        var price = parseFloat($('#price' + productId).data('price'));
+        var price = parseFloat($('#price' + productId).data('price')); // id가 'price'와 (위에서 찾은)'productId'의 조합인 요소 선택 후 선택된 요소에서 'data-price'라는 데이터 속성값 가져오기
         var totalPrice = newVal * price;
-        $('#totalprice' + productId).text(totalPrice);
+        $('#totalprice' + productId).text(totalPrice); // $('#totalprice' + productId)이 요소에 totalPrice의 내용을 설정함
+        
+        
+        
     });
     
  
 });
 
+	$(document).ready(function () {
+	    // Update Cart 버튼 클릭 시 동작
+	    $('.cart-btn-right').on('click', function () {
+	        var totalSum = 0; // 각 totalprice 값을 더할 변수를 초기화
+
+	        $('[id^="totalprice"]').each(function () { // id가 totalprice로 시작하는 모든 요소를 선택한 후 선택된 요소에 대해 반복 작업을 수행한다.
+	            // 각 항목의 텍스트 값을 가져와서 부동 소수점으로 변환하여 더함
+	            totalSum += parseFloat($(this).text()); // $(this) : 현재 반복중인 요소
+	        });
+	
+	        // 최종 총 가격을 id가 finalTotalPrice인 요소에 내용을 설정함.
+	        $('#finalTotalPrice').text(totalSum);
+	    });
+	});
 
 })(jQuery);

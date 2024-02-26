@@ -34,6 +34,10 @@
         margin: 5px;
     }
 
+    .no-left-border{
+        border-left: none;
+    }
+
     input{
         width: 90%;
         border: 1px solid #bfbfbfef;
@@ -52,6 +56,7 @@
         color: white;
         border: 1px solid rgb(223, 108, 108);
         border-radius: 5px;
+        
     }
 
     #withdrawal{
@@ -85,38 +90,38 @@
         </tr>
         <tr>
             <td>아이디</td>
-            <td colspan="2"><input type="text"></td>
-            <td><button id="check">아이디 중복체크</button></td>
+            <td colspan="2" style="border-right: none;"><input type="text"></td>
+            <td style="border-left: none;"><button id="check">아이디 중복체크</button></td>
         </tr>
         <tr>
             <td>비밀번호</td>
-            <td colspan="3"><input type="text"></td>
+            <td colspan="3"><input type="password"></td>
         </tr>
         <tr>
             <td>비밀번호 확인</td>
-            <td colspan="3"><input type="text"></td>
+            <td colspan="3"><input type="password"></td>
         </tr>
         <tr>
             <td>연락처</td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
+            <td style="border-right: none;"><input type="number" style="width: 100px;"></td>
+            <td style="border-right: none; border-left: none;"><input type="number" style="width: 100px;"></td>
+            <td style="border-left: none;"><input type="number" style="width: 100px;"></td>
         </tr>
         <tr>
             <td>우편번호</td>
-            <td colspan="2"><input type="number"></td>
-            <td><button id="check">우편번호 확인</button>
+            <td colspan="2" style="border-right: none;"><input type="number"></td>
+            <td style="border-left: none;"><button id="check">우편번호 확인</button>
         </tr>
         <tr>
             <td rowspan="2">주소</td>
-            <td colspan="3"><input type="text"></td>
+            <td colspan="3" style="border-bottom: none;"><input type="text"></td>
         </tr>
         <tr>
-            <td colspan="3"><input type="text"></td>
+            <td colspan="3" style="border-top: none;"><input type="text"></td>
         </tr>
         <tr>
-            <td colspan="2"><button id="editbutton">수정하기</button></td>
-            <td colspan="2"><button id="rewritebutton">다시쓰기</button></td>
+            <td colspan="2" style="border-right: none;"><button id="editbutton">수정하기</button></td>
+            <td colspan="2" style="border-left: none;"><button id="rewritebutton">다시쓰기</button></td>
         </tr>
         <tr>
             <td colspan="4"><button id="withdrawal">회원 탈퇴</button></td>
@@ -125,5 +130,14 @@
 </table>
 </div>
 <br><br>
+<script>
+    function clearInputs() {
+    var inputs = document.querySelectorAll('input'); // 페이지에 있는 모든 input 요소 선택에서 inputs에 할당
+    for (var i = 0; i < inputs.length; i++) {
+            inputs[i].value= '';
+     }
+}
+    document.getElementById('rewritebutton').addEventListener('click', clearInputs);
+</script>
 </body>
 </html>
