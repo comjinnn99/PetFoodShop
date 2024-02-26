@@ -90,7 +90,7 @@
           </ul>
           <div class="header__cart__price">
             item:
-            <span>$150.00</span>
+            <a href="orderlist"><span>주문 목록</span></a>
           </div>
         </div>
       </div>
