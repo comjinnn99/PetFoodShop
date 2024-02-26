@@ -48,9 +48,33 @@
         <nav class="header__menu">
           <ul>
             <li class="active"><a href="home">Home</a></li>
-            <li><a href="food">강아지 화식</a></li>
-            <li><a href="snack">간식</a></li>
-            <li><a href="supply">펫용품</a></li>
+            <li><a href="food">강아지 화식</a>
+              <ul class="header__menu__dropdown">
+                <li><a href="chicken">닭가슴살</a></li>
+                <li><a href="beef">소고기</a></li>
+                <li><a href="salmon">연어</a></li>
+                <li><a href="duck">오리</a></li>
+              </ul>
+            </li>
+            <li><a href="snack">간식</a>
+              <ul class="header__menu__dropdown">
+                <li><a href="topping">토핑/육포</a></li>
+                <li><a href="healthfood">보양식</a></li>
+                <li><a href="petmilk">펫밀크/무스</a></li>
+                <li><a href="treat">트릿</a></li>
+                <li><a href="gum">껌</a></li>
+                <li><a href="supplement">영양제</a></li>
+                <li><a href="giftset">선물세트</a></li>
+              </ul>
+            </li>
+            <li><a href="supply">펫용품</a>
+              <ul class="header__menu__dropdown">
+                <li><a href="./shop-details.html">Shop Details</a></li>
+                <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                <li><a href="./checkout.html">Check Out</a></li>
+                <li><a href="./blog-details.html">Blog Details</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </div>
@@ -132,3 +156,9 @@
   </div>
 </section>
 <!-- Hero Section End -->
+<script>
+  $('.header__menu ul li').on('click', function () {
+    $('.header__menu ul li').removeClass('active');
+    $(this).addClass('active');
+  });
+</script>
