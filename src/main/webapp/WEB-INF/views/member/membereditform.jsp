@@ -7,44 +7,6 @@
 <title>회원 수정</title>
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <style>
-
-
-	.table1{
-
-        width: 700px;
-        height: 600px;
-        border: 2px solid #d2d2d2ef;
-        border-radius: 10px;
-        padding: 100px;
-        box-shadow: 6px 6px 12px 0 rgba(0, 0, 0, 0.1);
-    }
-    th{
-        border-collapse: collapse;
-        text-align: center;
-        border: 1px solid #c8c7c7ef;
-        border-radius: 5px;
-        padding: 1px;
-    }
-
-    td{
-        border-collapse: collapse;
-        text-align:center;
-        border: 1px solid #c8c7c7ef;
-        border-radius: 5px;
-        padding: 1px;
-        margin: 5px;
-    }
-
-    .no-left-border{
-        border-left: none;
-    }
-
-    input{
-        width: 90%;
-        border: 1px solid #bfbfbfef;
-        border-radius: 5px;
-    }
-
     #editbutton{
         background-color: #7fad39;
         color: white;
@@ -53,84 +15,97 @@
     }
 
     #rewritebutton{
-        background-color: rgb(237, 94, 94);
+        background-color: rgb(255, 118, 118);
         color: white;
-        border: 1px solid rgb(223, 108, 108);
+        border: 1px solid rgb(255, 118, 118);
         border-radius: 5px;
         
     }
 
     #withdrawal{
-        background-color: rgb(188, 188, 188);
-        color: white;
-        border: 1px solid rgb(227, 226, 226);
-        border-radius: 5px;
+    font-size: 16px;
+	color: #6f6f6f;
+	background: #f5f5f5;
+	display: inline-block;
+	padding: 7px 26px 5px;
+	margin-right: 6px;
+	margin-bottom: 10px;
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
     }
 
     #check{
-        background-color: rgb(120, 120, 252);
+        background-color: rgb(150, 150, 252);
         color: white;
-        border: 1px solid rgb(120, 120, 252);
+        border: 1px solid rgb(150, 150, 252);
         border-radius: 5px;
     }
-    
 </style>
 </head>
 <body>
-<br>
-<div align="center">
-<table class="table1">
-    <thead>
-    		<h2>회원 수정</h2>
-    </thead>
-    <br>
-    <tbody>
-        <tr>
-            <td text-align="left">이름</td>
-            <td colspan="3"><input type="text"></td>
-        </tr>
-        <tr>
-            <td>아이디</td>
-            <td colspan="2" style="border-right: none;"><input type="text"></td>
-            <td style="border-left: none;"><button id="check">아이디 중복체크</button></td>
-        </tr>
-        <tr>
-            <td>비밀번호</td>
-            <td colspan="3"><input type="password"></td>
-        </tr>
-        <tr>
-            <td>비밀번호 확인</td>
-            <td colspan="3"><input type="password"></td>
-        </tr>
-        <tr>
-            <td>연락처</td>
-            <td style="border-right: none;"><input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1').substring(0, 3);" style="width: 100px;"></td>
-            <td style="border-right: none; border-left: none;"><input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1').substring(0, 4);" style="width: 100px;"></td>
-            <td style="border-left: none;"><input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1').substring(0, 4);" style="width: 100px;"></td>
-        </tr>
-        <tr>
-            <td>우편번호</td>
-            <td colspan="2" style="border-right: none;"><input type="text" id="postcode"></td>
-            <td style="border-left: none;"><button id="check" onclick="DaumPostcode()">우편번호 찾기</button>
-        </tr>
-        <tr>
-            <td rowspan="2">주소</td>
-            <td colspan="3" style="border-bottom: none;"><input type="text" id="address"></td>
-        </tr>
-        <tr>
-            <td colspan="3" style="border-top: none;"><input type="text" id="detailAddress" placeholder=" 상세주소"></td>
-        </tr>
-        <tr>
-            <td colspan="2" style="border-right: none;"><button id="editbutton">수정하기</button></td>
-            <td colspan="2" style="border-left: none;"><button id="rewritebutton">다시쓰기</button></td>
-        </tr>
-        <tr>
-            <td colspan="4"><button id="withdrawal">회원 탈퇴</button></td>
-        </tr>
-    </tbody>
-</table>
-</div>
-<br><br>
+
+    <!-- Checkout Section Begin -->
+    <section class="checkout spad">
+        <div class="container">
+            <div class="row justify-content-center">
+            <div class="checkout__form">
+                <h4>회원 정보 수정</h4>
+
+                        <div class="col-lg-12 mx-auto">
+                           
+                            <div class="col-lg-12 ">
+                                    <div class="checkout__input">
+                                        <p>이름<span>*</span></p>
+                                        <input type="text">
+                                    </div>
+                             </div>
+                            
+                            <div class="col-lg-12 ">
+                                <div class="checkout__input">
+                                    <p>아이디<span>*</span></p>
+                                    <input type="text">
+                                </div>
+                                <div class="checkout__input">
+                                    <p>비밀번호<span>*</span></p>
+                                    <input type="password">
+                                </div>
+                                <div class="checkout__input">
+                                    <p>비밀번호 확인<span>*</span></p>
+                                    <input type="password">
+                                </div>
+                                <div class="checkout__input">
+                                    <p>연락처<span>*</span></p>
+                                    <input type="text" class="col-lg-2" style="margin-right: 10px;" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1').substring(0, 3);">
+                                    <input type="text" class="col-lg-2" style="margin-right: 10px;" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1').substring(0, 4);">
+                                    <input type="text" class="col-lg-2" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1').substring(0, 4);">
+                                </div>
+                                <div class="checkout__input">
+                                    <p>우편번호<span>*</span></p>
+                                    <input type="text" class="col-lg-8" id="postcode" readonly>
+                                    <button id="check" style="margin-left: 20px;" onclick="DaumPostcode()">우편번호 찾기</button>
+                                </div>
+                                <div class="checkout__input">
+                                    <p>주소<span>*</span></p>
+                                    <input type="text" placeholder="도로명 주소" class="checkout__input__add" id="address" readonly>
+                                    <input type="text" placeholder="상세 주소" id="detailAddress">
+                                </div>
+                                <div class="checkout__input d-flex justify-content-center">
+                                    <button id="editbutton" style="margin-right: 100px;">수정하기</button>
+                                    <button id="rewritebutton">다시쓰기</button>
+                                </div>
+                                <div id="withdrawal" role="button" class="d-flex justify-content-center">
+                                    회원 탈퇴
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Checkout Section End -->
+
+
 <script>
 
 function DaumPostcode() {
