@@ -5,6 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+
+</style>
 </head>
 <body>
     <!-- Breadcrumb Section Begin -->
@@ -41,7 +44,7 @@
                                     <th></th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="cartTable">
                                 <tr>
                                     <td class="shoping__cart__item">
                                         <img src="resources/img/cart/cart-1.jpg" alt="">
@@ -121,26 +124,17 @@
                             Upadate Cart</a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="shoping__continue">
-                        <div class="shoping__discount">
-                            <h5>Discount Codes</h5>
-                            <form action="#">
-                                <input type="text" placeholder="Enter your coupon code">
-                                <button type="submit" class="site-btn">APPLY COUPON</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+              	<div class="col-lg-6"></div>
                 <div class="col-lg-6">
                     <div class="shoping__checkout">
                         <h5>Cart Total</h5>
                         <ul>
-                            <li>Total <span id="finalTotalPrice" type="number">300</span></li>
+                            <li>Total <span id="finalTotalPrice" type="number">0</span></li>
                         </ul>
                         <a href="checkoutform" class="primary-btn">PROCEED TO CHECKOUT</a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>

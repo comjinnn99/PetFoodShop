@@ -11,22 +11,27 @@ public class FoodController {
 
 	@RequestMapping(value = "/chicken", method = RequestMethod.GET)
 	public String chicken() {
-		return "foodcategory/chicken";
+		return "food/chicken";
 	}
 	
 	@RequestMapping(value = "/beef", method = RequestMethod.GET)
 	public String beef() {
-		return "foodcategory/beef";
+		return "food/beef";
 	}
 	
 	@RequestMapping(value = "/salmon", method = RequestMethod.GET)
 	public String salmon() {
-		return "foodcategory/salmon";
+		return "food/salmon";
 	}
 	
 	@RequestMapping(value = "/duck", method = RequestMethod.GET)
 	public String duck() {
-		return "foodcategory/duck";
+		return "food/duck";
+	}
+	
+	@RequestMapping(value = "/food", method = RequestMethod.GET)
+	public String food() {
+		return "food/food";
 	}
 	
 }

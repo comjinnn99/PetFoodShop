@@ -48,9 +48,31 @@
         <nav class="header__menu">
           <ul>
             <li class="active"><a href="home">Home</a></li>
-            <li><a href="food">강아지 화식</a></li>
-            <li><a href="snack">간식</a></li>
-            <li><a href="supply">펫용품</a></li>
+            <li><a href="food">강아지 화식</a>
+              <ul class="header__menu__dropdown">
+                <li><a href="chicken">닭가슴살</a></li>
+                <li><a href="beef">소고기</a></li>
+                <li><a href="salmon">연어</a></li>
+                <li><a href="duck">오리</a></li>
+              </ul></li>
+            <li><a href="snack">간식</a>
+              <ul class="header__menu__dropdown">
+                <li><a href="topping">토핑/육포</a></li>
+                <li><a href="healthfood">보양식</a></li>
+                <li><a href="petmilk">펫밀크/무스</a></li>
+                <li><a href="treat">트릿</a></li>
+                <li><a href="gum">껌</a></li>
+                <li><a href="supplement">영양제</a></li>
+                <li><a href="giftset">선물세트</a></li>
+              </ul></li>
+            <li><a href="supply">펫용품</a>
+              <ul class="header__menu__dropdown">
+                <li><a href="pottypad">배변패드</a></li>
+                <li><a href="bathsupply">목욕용품</a></li>
+                <li><a href="outingsupply">외출용품</a></li>
+                <li><a href="dailysupply">생활용품</a></li>
+                <li><a href="dryfeed">건사료</a></li>
+              </ul></li>
           </ul>
         </nav>
       </div>
@@ -68,7 +90,7 @@
           </ul>
           <div class="header__cart__price">
             item:
-            <span>$150.00</span>
+            <a href="orderlist"><span>주문 목록</span></a>
           </div>
         </div>
       </div>
